@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhonePe</title>
+    <link rel="stylesheet" href="phonePe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">  
+</head>
+<body>
+    <div id="parent">
+        <div id="container">
+            <img id="logo" src="https://images.news18.com/optimize/5PFOoLGwya-r16GMJt_iVUw6T0c=/532x353/images.news18.com/ibnlive/uploads/532x353/jpg/2019/12/PhonePe.png" alt="">
+            <div id = "sub_cont">
+                <form action="#">
+                    <h2 id="heading">Enter Card Details</h2>
+                    <p class="details">Enter Amount</p>
+                    <input id="amount" type="number" placeholder="Enter Amount">
+                    <p class="details">Enter Card Number</p>
+                    <input id="card_no" type="number" placeholder="Enter Card Number">
+                    <p class="details">Expiry Date</p>
+                    <input id="Expiry" type="text" placeholder="Enter Expiry Date">
+                    <p class="details">Enter Cvv</p>
+                    <input id="cvv" type="number" placeholder="Enter Cvv">
+                    <button id="submit" type="submit">Submit</button>
+
+                </form>
+                <div id="buttons">
+                    <button id="card">Card Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Card Details-->
+        <div id="cardDetails">
+            <i class="fa-solid fa-xmark"></i>
+            <h3>Current Amount</h3>
+            <p>₹ 500</p>
+            <h3>Card Number</h3>
+            <p>78347353432</p>
+            <h3>Expiry Date</h3>
+            <p>10/25</p>
+            <h3>Cvv</h3>
+            <p>342</p>
+        </div>
+
+        <!--Payment Loading-->
+        <div id="loading" class="hidden">
+            <h2>Payment Processing</h2>
+            <div id="loading_bar"></div>
+            <p>Please wait while we are processing your payment...</p>
+        </div>
+
+        <!--Payment Sucessful-->
+        <div id="success">
+            <i class="fa-regular fa-circle-check" style="color: #60f97a;"></i>
+            <h1>Thank you!</h1>
+            <p>Your payment is successful </p>
+            <button class="return">Return to home page</button>
+        </div>
+
+        <!--Payment Failed-->
+        <div id="failed">
+            <i id="failedlogo" class="fa-solid fa-circle-exclamation" style="color: #ff0000;"></i>
+            <h1>Payment Failed!</h1>
+            <p>Please try again</p>
+
+        </div>
+    </div>
+</body> 
+<script src="phonePe.js"></script>
+</html>
