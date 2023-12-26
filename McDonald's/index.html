@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">  
+</head>
+<body>
+    <div id="parent">
+        <div id="container">
+            <div id="heading">
+                <h1>McDonald's</h1>
+            </div>
+            <div id="status">
+                <h2 id="currentStatus">Order Status</h2>
+                <h2 id="orderID">Order id</h2>
+            </div>
+
+            <div id="imgSlider">
+                <img class="slider" src="https://th.bing.com/th/id/R.35ba92986d2a9d4cbec0d90a97d29506?rik=L2EHyPmTATcrwg&riu=http%3a%2f%2fcdn.quizly.co%2fwp-content%2fuploads%2f2019%2f02%2f07121847%2fmcdonalds-drinks.jpg&ehk=TPn8XbMY%2b01apQ2l2zFa5JSjDw40fwDGPCCi%2frzjW9Y%3d&risl=&pid=ImgRaw&r=0" alt="">
+                <img class="slider" src="https://th.bing.com/th/id/OIP.QS74cLuF0r9mgK39d-KcRAHaE8?rs=1&pid=ImgDetMain" alt="">
+                <img class="slider" src="https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2016/02/26/103423796-McPick2-FOF-Header.1910x1000.jpg" alt="">
+                <img class="slider" src="https://th.bing.com/th/id/OIP.b2hmxhmCn36cKR2iUafjNAHaF7?rs=1&pid=ImgDetMain" alt="">
+                <img class="slider" src="https://th.bing.com/th/id/OIP.9P1M6YJ4YPBwWLj3Ch6rwwHaE8?rs=1&pid=ImgDetMain" alt="">
+            </div>
+
+            <div id="menu">
+                <h1>Menu</h1>
+                <hr>
+                <ul>
+                    <li><input id="bdy" type="radio" name="menuOption"> Birthday Party Pack</li>
+                    <li><input id="corn" type="radio" name="menuOption"> Corn & Cheese Burger</li>
+                    <li><input id="flurry" type="radio" name="menuOption"> Mc Flurry with GEMS Regular</li>
+                    <li><input id="cold" type="radio" name="menuOption"> Hazelnut Cold Coffee</li>
+                    <li><input id="hot" type="radio" name="menuOption"> Hot Choclate</li>
+                    <li><input id="fries" type="radio" name="menuOption"> French Fries</li>
+                    <li><input id="meal" type="radio" name="menuOption"> Mc Veggie Happy Meal</li>
+                </ul>
+            </div>
+        </div>
+        <!--Order Pictures--> 
+        <div class="order" id="mealImg">
+            <h2>Your Order</h2>
+            <img src="https://c38blhej2h.execute-api.ap-south-1.amazonaws.com/dev/png/228/1697170105383918.png" alt="">
+            <button class="orderAgain">New Order</button>
+        </div>
+        <div class="order" id="cornImg">
+            <h2>Your Order</h2>
+            <img src="https://c38blhej2h.execute-api.ap-south-1.amazonaws.com/dev/jpeg/228/1686655023490289.jpeg" alt="">
+            <button class="orderAgain">New Order</button>
+        </div>
+        <div class="order" id="friesImg">
+            <h2>Your Order</h2>
+            <img src="https://c38blhej2h.execute-api.ap-south-1.amazonaws.com/dev/png/228/MFRIES-60-1-60.png" alt="">
+            <button class="orderAgain">New Order</button>
+        </div>
+        <div class="order" id="bdyImg">
+            <h2>Your Order</h2>
+            <img src="https://c38blhej2h.execute-api.ap-south-1.amazonaws.com/dev/png/228/1697173115643816.png" alt="">
+            <button class="orderAgain">New Order</button>
+        </div>
+        <div class="order" id="flurryImg">
+            <h2>Your Order</h2>
+            <img src="https://c38blhej2h.execute-api.ap-south-1.amazonaws.com/dev/png/228/1700496032892877.png" alt="">
+            <button class="orderAgain">New Order</button>
+        </div>
+        <div class="order" id="coldImg">
+            <h2>Your Order</h2>
+            <img src="https://c38blhej2h.execute-api.ap-south-1.amazonaws.com/dev/png/228/169583449946666.png" alt="">
+            <button class="orderAgain">New Order</button>
+        </div>
+        <div class="order" id="hotImg">
+            <h2>Your Order</h2>
+            <img src="https://c38blhej2h.execute-api.ap-south-1.amazonaws.com/dev/png/228/1696848114338566.png" alt="">
+            <button class="orderAgain">New Order</button>
+        </div>
+        
+        <!--Order Place Button-->
+        <div id="orderBtn">
+            <button>Order Food</button>
+        </div>
+    </div>
+</body>
+<script src="order.js"></script>
+</html>
+
