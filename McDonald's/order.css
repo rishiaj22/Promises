@@ -1,0 +1,162 @@
+body{
+    background: url("https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA14PXQj.img?h=630&w=1200&m=6&q=60&o=t&l=f&f=jpg");
+    background-size: cover;
+}
+#parent{
+    display: flex;
+    align-items: center;
+    height: 45rem;
+}
+#container{
+    margin-left: 10px;
+    width: 60rem;
+    height: 40rem;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+}
+#heading{
+    background-color: rgb(172,30,46);
+    color: #E7BC02;
+
+    height: 3.5rem;
+    width: 60rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+#heading h1{
+    margin-top: 0px;
+    padding-top: 10px;
+
+}
+
+#status{
+    display: flex;
+    background-color: #E7BC02;
+    justify-content: space-around;
+    height: 3.5rem;
+    width: 40rem;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+#currentStatus{
+    margin-left: -70px;
+    margin-top: 20px;
+}
+#orderID{
+    margin-top: 20px;
+}
+#imgSlider{
+    height: 15rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 19rem;
+    margin-left: 60%;
+    margin-top: 10%;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.slider{
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+
+}
+#menu{
+    background-color: rgb(234, 234, 234);
+    position: absolute;
+    top:0;
+    margin-top: 13%;
+    margin-left: 35px;
+    border-radius: 10px;
+    height: 30rem;
+    width: 25rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+#menu h1{
+    text-align: center;
+}
+#menu ul {
+    list-style: none;
+    padding: 10px;
+}
+#menu ul li{
+    padding: 12px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#menu ul li input{
+    transform: scale(1.2);
+}
+/* Order Place Button */
+#orderBtn button{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 9%;
+    margin-left: -22%;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    color: #E7BC02;
+    background-color: rgb(172,30,46);
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#orderBtn button:hover{
+    background-color: rgb(99, 11, 21);
+}
+
+
+
+/* Order Confirmed Images */
+.order{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(229, 226, 226);
+    position: absolute;
+    width: 30rem;
+    height: 20rem;
+    margin-left: 33.5%;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 0;
+    transition: all 1s;
+
+}
+.order h2{
+    margin-left: -50px;
+}
+.order img{
+    margin-top: 7%;
+    width: 60%;
+    height: 63%;
+    animation: float 6s infinite;
+    margin-left: 50px;
+}
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.orderAgain{
+    cursor: pointer;
+    padding: 5px 10px 5px 15px;
+    color: #E7BC02;
+    background-color: rgb(172,30,46);
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 6px;
+}
+
